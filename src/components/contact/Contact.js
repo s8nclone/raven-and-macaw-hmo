@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="contact rounded-t-xl bg-orange-200 p-2">
             <div className="grid grid-cols-1 lg:grid-cols-3 space-x-4" >
                 <div className="contact-container p-2">
-                    <div className="flex items-center">
+                    <div className="flex items-center space-x-1">
                         <img className="rounded-r-lg w-10 h-10" alt="company logo" src={logo} />
                         <h1 className="text-xl font-extrabold">Raven&Macaw<span className="text-orange-600">HMO</span></h1>
                     </div>
@@ -36,9 +36,10 @@ const Contact = () => {
                         <div className="pt-2">
                             <h3>Follow us on social media</h3>
                             <ul>
-                                <li>Twitter:<a href="?">@RavenMacawHMO</a></li>
-                                <li>Facebook:<a href="?">RavenMacawHMO</a></li>
-                                <li>LinkedIn:<a href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Twitter:<a className="text-white" href="?">@RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Facebook:<a className="text-white" href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">LinkedIn:<a className="text-white" href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Instagram:<a className="text-white" href="?">RavenMacawHMO</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,33 +82,32 @@ const Contact = () => {
                 </div>
             </div>
             
-            <div className="form-div">
+            <div>
                 <form onSubmit={handleSubmit}>
                     <h2>Subscribe to our newsletter</h2>
-                    <div className="">
+                    <div className="lg:flex lg:justify-center space-x-2">
                         <input 
-                        type="text" 
-                        name="username" 
-                        value={inputs.username || ""} 
-                        placeholder="Name"
-                        onChange={handleChange}
-                        className="form-input"
-                    />
-                    </div>
-                    <div className="label">
+                            type="text" 
+                            name="username" 
+                            value={inputs.username || ""} 
+                            placeholder="Name"
+                            onChange={handleChange}
+                            className="form-input rounded-md font-semibold border-orange-600 hover:border-orange-800 focus:border-orange-800"
+                        />
                         <input
-                        type="email" 
-                        name="email" 
-                        placeholder="you@email.com"
-                        value={inputs.email || ""} 
-                        onChange={handleChange}
-                        className="form-input"
-                    />
+                            type="email" 
+                            name="email" 
+                            placeholder="you@email.com"
+                            value={inputs.email || ""} 
+                            onChange={handleChange}
+                            className="form-input rounded-md font-semibold border-orange-600 hover:border-orange-800 focus:border-orange-800"
+                        />
                     </div>
                     
-                    <input type="button" />
+                    <input type="button" value="Subscribe" className=" form-input font-bold border-orange-600 hover:bg-orange-600 hover:text-white p-2 m-3 rounded-full" />
                 </form>
             </div>
+            <h4 className="text-center text-sm">@2023 Raven&MacawHMO. All Rights Reserved.</h4>
         </div>
     );
 }
