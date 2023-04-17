@@ -40,6 +40,7 @@ const Contact = () => {
                                 <li className="font-medium text-sm">Facebook:<a className="text-white" href="?">RavenMacawHMO</a></li>
                                 <li className="font-medium text-sm">LinkedIn:<a className="text-white" href="?">RavenMacawHMO</a></li>
                                 <li className="font-medium text-sm">Instagram:<a className="text-white" href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Email us:<a className="text-white" href="mailto:hello@ravenandmacaw.com">hello@ravenandmacaw.com</a></li>
                             </ul>
                         </div>
                     </div>
