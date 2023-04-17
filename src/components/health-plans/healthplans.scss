@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img-container {
+    padding: 2rem;
+    border-radius: 2em;
+    @apply shadow-md shadow-orange-300 transition ease-in-out transform hover:-translate-x-7 hover:-translate-y-5 delay-150 duration-500;
+
+    img {
+        padding: .8em;
+        max-width: 10em;
+        height:10em;
+        @apply scale-100;
+    }
+
+    h3 {
+        margin-top: 1.2em;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        @apply capitalize;
+
+        span {
+            color: orangered;
+            font-size: 1.2em;
+            font-weight: bolder;
+        }
+    }
+
+    p {
+        margin-top: 1.2em;
+        font-size: 1.2rem;
+    }
+}
