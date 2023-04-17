@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.contact {
+    h2 {
+        @apply text-xl font-bold underline-offset-2 pb-2 text-orange-600;
+        text-decoration: double underline;
+    }
+
+    h3 {
+        @apply text-lg font-semibold
+    }
+
+    a {
+        @apply font-medium text-base hover:text-orange-500 hover:translate-x-2 ;
+    }
+
+    .form-div {
+        border: 1px solid red;
+
+    }
+}

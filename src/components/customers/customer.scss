@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.customer {
+    margin: 0 auto;
+    @apply lg:w-[60rem];
+    
+}

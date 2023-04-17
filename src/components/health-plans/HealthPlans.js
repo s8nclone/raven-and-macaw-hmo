@@ -12,31 +12,36 @@ const HealthPlans = () => {
             <div className="font-extrabold text-2xl tracking-wider text-orange-600">
                 <h2>Our health plans are inclusive</h2>
             </div>
-            <div className="text-center flex space-x-10 snap-x snap-mandatory">
+            <div className="text-center md:flex md:space-x-4 md:flex-wrap lg:flex lg:space-x-6 lg:flex-nowrap">
                 <div className="img-container">
                     <img alt="single person" src={person} />
                     <h3>just <span>YOU</span></h3>
-                    <p> lorem ipsum dolor emet</p>
+                    <p> Heath insurance tailored just for you!</p>
+                    <button>Learn more</button>
                 </div>
                 <div className="img-container">
                     <img alt="for your family" src={family} />
-                    <h3>Me and my family</h3>
-                    <p> lorem ipsum dolor emet</p>
+                    <h3>Me & my family</h3>
+                    <p> Get medical coverage for you and your family</p>
+                    <button>Learn more</button>
                 </div>
                 <div className="img-container">
                     <img alt="for your workers" src={workers} />
                     <h3>Workers Health</h3>
-                    <p> lorem ipsum dolor emet</p>
+                    <p>Health insurance that won't dissapoint you and your employees</p>
+                    <button>Learn more</button>
                 </div>
                 <div className="img-container">
                     <img alt="for extended family" src={exFamily} />
                     <h3>large families</h3>
-                    <p> lorem ipsum dolor emet</p>
+                    <p> Have a large family? Our plans cover for you and every other member of the family</p>
+                    <button>Learn more</button>
                 </div>
                 <div className="img-container">
                     <img alt="for old parents" src={oldies} />
                     <h3>Old but Young</h3>
-                    <p> lorem ipsum dolor emet</p>
+                    <p>Put your mind at ease knowing that your older folks health is covered</p>
+                    <button>Learn more</button>
                 </div>
             </div>
         </div>

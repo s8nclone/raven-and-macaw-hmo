@@ -1,6 +1,8 @@
 import Navigation from './components/navigation/Navigation';
 import PageIntro from './components/introduction/PageIntro';
 import HealthPlans from './components/health-plans/HealthPlans';
+import Customers from './components/customers/Customers';
+import Contact from './components/contact/Contact';
 import './App.scss';
 
 function App() {
@@ -9,9 +11,9 @@ function App() {
       <Navigation />
       <PageIntro />
       <HealthPlans />
-      {/* 
       <Customers />
       <Contact />
+      {/* 
       <SignIn />
       <Register /> */}
     </div>
