@@ -1,9 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 
-.customer {
-    margin: 0 auto;
-    @apply lg:w-[60rem];
+// .customer {
+//     margin: 0 auto;
+//     @apply lg:w-[60rem];
     
-}
+// }
+
+@media (min-width: 1024px) {
+    .customer {
+        margin: 0 auto;
+        width: 60rem;
+    }
+  }
+  
