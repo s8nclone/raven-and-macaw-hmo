@@ -4,8 +4,7 @@
 
 .img-container {
     width: 100%;
-    @apply
-    transition ease-in-out 
+    @apply transition ease-in-out 
     transform hover:translate-x-7 
     hover:-translate-y-5 delay-150 duration-500
     md:w-[12em] h-[10%];
