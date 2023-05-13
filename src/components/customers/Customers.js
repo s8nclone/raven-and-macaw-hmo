@@ -23,7 +23,7 @@ import who from './images/whologo.png';
 
 const Customers = () => {
     return (
-        <div className="bg-orange-100 rounded-xl shadow-inner m-3 p-5">
+        <div className="m-3 p-5">
             <div>
                 <h2 className="text-center text-xl font-extrabold text-orange-600 tracking-wider">
                     We provide services to a plethora of organizations and individuals</h2>

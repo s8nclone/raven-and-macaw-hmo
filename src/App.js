@@ -11,6 +11,7 @@ function App() {
       <Navigation />
       <PageIntro />
       <HealthPlans />
+      <div className="w-[100%] bg-orange-400 h-[.5px]"/>
       <Customers />
       <Contact />
       {/* 

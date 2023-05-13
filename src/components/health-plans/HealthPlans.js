@@ -8,11 +8,11 @@ import oldies from './images/oldies.png';
 
 const HealthPlans = () => {
     return (
-        <div className="m-3 p-5">
+        <div className="my-3 p-5">
             <div className="font-extrabold text-2xl tracking-wider text-orange-600">
                 <h2>Our health plans are inclusive</h2>
             </div>
-            <div className="text-center md:flex md:space-x-4 md:flex-wrap lg:flex lg:space-x-6 lg:flex-nowrap">
+            <div className="text-center flex flex-col justify-center md:flex md:flex-row md:space-x-4 md:flex-wrap lg:flex lg:space-x-6 lg:flex-nowrap lg:justify-around">
                 <div className="img-container">
                     <img alt="single person" src={person} />
                     <h3>just <span>YOU</span></h3>

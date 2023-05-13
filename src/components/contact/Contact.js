@@ -19,11 +19,11 @@ const Contact = () => {
     }
 
     return (
-        <div className="contact rounded-t-xl bg-orange-200 p-2">
+        <div className="contact bg-orange-200 p-2">
             <div className="grid grid-cols-1 lg:grid-cols-3 space-x-4" >
                 <div className="contact-container p-2">
                     <div className="flex items-center space-x-1">
-                        <img className="rounded-r-lg w-10 h-10" alt="company logo" src={logo} />
+                        <img className="rounded-r-lg w-8 h-8" alt="company logo" src={logo} />
                         <h1 className="text-xl font-extrabold">Raven&Macaw<span className="text-orange-600">HMO</span></h1>
                     </div>
                     <div className="text-left pt-2">
@@ -36,20 +36,20 @@ const Contact = () => {
                         <div className="pt-2">
                             <h3>Follow us on social media</h3>
                             <ul>
-                                <li className="font-medium text-sm">Twitter:<a className="text-white" href="?">@RavenMacawHMO</a></li>
-                                <li className="font-medium text-sm">Facebook:<a className="text-white" href="?">RavenMacawHMO</a></li>
-                                <li className="font-medium text-sm">LinkedIn:<a className="text-white" href="?">RavenMacawHMO</a></li>
-                                <li className="font-medium text-sm">Instagram:<a className="text-white" href="?">RavenMacawHMO</a></li>
-                                <li className="font-medium text-sm">Email us:<a className="text-white" href="mailto:hello@ravenandmacaw.com">hello@ravenandmacaw.com</a></li>
+                                <li className="font-medium text-sm">Twitter:<a className="text-white px-2" href="?">@RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Facebook:<a className="text-white px-2" href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">LinkedIn:<a className="text-white px-2" href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Instagram:<a className="text-white px-2" href="?">RavenMacawHMO</a></li>
+                                <li className="font-medium text-sm">Email us:<a className="text-white px-2" href="mailto:hello@ravenandmacaw.com">hello@ravenandmacaw.com</a></li>
                             </ul>
                         </div>
                     </div>
                     
                 </div>
-                <div className="plan-container flex lg:col-span-2 p-2 justify-around ">
-                    <div>
+                <div className="plan-container flex flex-wrap justify-between lg:col-span-2 p-2 text-left lg:justify-around">
+                    <div className="w-[50%] my-2 md:w-max">
                         <h2>Company</h2>
-                        <ul className="text-left">
+                        <ul>
                             <li><a href="?" >About</a></li>
                             <li><a href="?">Team</a></li>
                             <li><a href="?">Board</a></li>
@@ -58,9 +58,9 @@ const Contact = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className="w-[50%] my-2 md:w-max">
                         <h2>Health Plans</h2>
-                        <ul className="text-left">
+                        <ul>
                             <li><a href="?">Just YOU</a></li>
                             <li><a href="?">Me & my family</a></li>
                             <li><a href="?">Workers health</a></li>
@@ -69,9 +69,9 @@ const Contact = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className="w-[50%] my-2 md:w-max">
                         <h2>Resources</h2>
-                        <ul className="text-left">
+                        <ul>
                             <li><a href="?">Available hospitals</a></li>
                             <li><a href="?">Benefit list</a></li>
                             <li><a href="?">Download Health App</a></li>
@@ -84,16 +84,16 @@ const Contact = () => {
             </div>
             
             <div>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} className="">
                     <h2>Subscribe to our newsletter</h2>
-                    <div className="lg:flex lg:justify-center space-x-2">
+                    <div className="block mx-9 md:space-x-2 lg:flex lg:justify-center lg:space-x-2">
                         <input 
                             type="text" 
                             name="username" 
                             value={inputs.username || ""} 
                             placeholder="Name"
                             onChange={handleChange}
-                            className="form-input rounded-md font-semibold border-orange-600 hover:border-orange-800 focus:border-orange-800"
+                            className="form-input rounded-md font-semibold border-orange-600 hover:border-orange-800 focus:border-orange-800 my-1"
                         />
                         <input
                             type="email" 
@@ -101,11 +101,11 @@ const Contact = () => {
                             placeholder="you@email.com"
                             value={inputs.email || ""} 
                             onChange={handleChange}
-                            className="form-input rounded-md font-semibold border-orange-600 hover:border-orange-800 focus:border-orange-800"
+                            className="form-input rounded-md font-semibold border-orange-600 hover:border-orange-800 focus:border-orange-800 my-1"
                         />
                     </div>
                     
-                    <input type="button" value="Subscribe" className=" form-input font-bold border-orange-600 hover:bg-orange-600 hover:text-white p-2 m-3 rounded-full" />
+                    <input type="button" value="Subscribe" className=" form-input font-bold border-orange-600 bg-orange-600 text-white p-2 my-2 rounded-md" />
                 </form>
             </div>
             <h4 className="text-center text-sm">@2023 Raven&MacawHMO. All Rights Reserved.</h4>
