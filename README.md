@@ -1,7 +1,7 @@
 # Interview Assessment for Raven and Macaw
 An HMO website for Raven and Macaw 
 
-You can access the website [here](https://ravenandmacaw.netlify.app/) or using this [link](https://bit.ly/3mSkjnA)
+You can access the website [here](https://ravenandmacaw.netlify.app/) or using this [link]([https://bit.ly/3mSkjnA](https://raven-and-macaw-hmo.vercel.app/))
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
