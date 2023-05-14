@@ -4,10 +4,22 @@
 
 .img-container {
     width: 100%;
-    @apply transition ease-in-out;
-    @apply transform hover:translate-x-7; 
-    @apply hover:-translate-y-5 delay-150 duration-500;
-    @apply md:w-[12em] h-[10%];
+    // @apply transition ease-in-out
+    // transform hover:translate-x-7
+    // hover:-translate-y-5 delay-150 duration-500;
+    // md:w-[12em] h-[10%];
+    transition: all 0.3s ease-in-out;
+    transition-delay: 150ms;
+    transition-duration: 500ms;
+    width: 12em;
+    height: 10%;
+    :hover {
+        transform: translateX(-7px);
+        transform: translateY(-5px); 
+    }
+    
+
+
 
     img {
         padding: .8em;
