@@ -13,7 +13,7 @@
     transition-duration: 500ms;
     width: 12em;
     height: 10%;
-    :hover {
+    &:hover {
         transform: translateX(-7px);
         transform: translateY(-5px); 
     }
